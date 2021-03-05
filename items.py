@@ -1,14 +1,10 @@
 
-def cosas():
-    return {"item_id": item_id, "q": q}
-
 
 def rooms():
-    return {
-        [
+    return [
             {
                 "name": 'Laboratorio SL001',
-                    objects: [
+                    'objects': [
                         {
                             'name': 'pizarra',
                             'position': 'center',
@@ -22,7 +18,7 @@ def rooms():
                                     {
                                     'answer_1': 'Pilar',
                                     'answer_2': 'Ardila',
-                                    'answer_3': 'Scharifker'
+                                    'answer_3': 'Scharifker',
                                     'clue_1': 'apellido directora de escuela de sistemas',
                                     'clue_2': 'apellido jefe del CeTIC',
                                     'clue_3': 'apellido rector Unimet',
@@ -31,7 +27,7 @@ def rooms():
                                     {
                                     'answer_1': 'Bello',
                                     'answer_2': 'Marcano',
-                                    'answer_3': 'Da Gama'
+                                    'answer_3': 'Da Gama',
                                     'clue_1': 'apellido de profesor Luis',
                                     'clue_2': 'apellido del profesor Alejandro',
                                     'clue_3': 'apellido del Presidente de la Unimet',
@@ -41,7 +37,7 @@ def rooms():
                                     {
                                     'answer_1': 'Boada',
                                     'answer_2': 'Llorante',
-                                    'answer_3': 'Da Gama'
+                                    'answer_3': 'Da Gama',
                                     'clue_1': 'apellido del coronel de Seguridad de la Unimet',
                                     'clue_2': 'apellido del presidente de la FCE-UNIMET ',
                                     'clue_3': 'apellido de Vicerrectora Académica de la Unimet',
@@ -54,9 +50,10 @@ def rooms():
                         {
                             'name': 'computadora 1',
                             'position': 'left',
-                            'riddle': {
-                                'message_requirement': 'mi pantalla no funciona'
+                            'game': {
+                                'message_requirement': 'mi pantalla no funciona',
                                 'requirement': 'cable HDMI',
+                                'name': 'Preguntas sobre python',
                                 'rules': 'pierde media vida por cada prueba incorrecta',
                                 'award': 'carnet',
                                 'questions': [
@@ -70,9 +67,8 @@ def rooms():
                                     {
                                         'question': 'Invierte este string con python en un línea  para poder leerlo frase = "oidutse ne al ortem aireinegni ed sametsis"',
                                         'answer': 'Validar en python que de el siguiente resultado: 50.00 en formato entero',
-                                        'clue_1': 'utiliza replace',
-                                        'clue_2': 'utiliza split',
-                                        'clue_3': 'utiliza int',
+                                        'clue_1': 'utiliza slices',
+                                
                                     }
                                 ]
                             }
@@ -80,10 +76,11 @@ def rooms():
                         {
                             'name': 'computadora 2',
                             'position': 'right',
-                            'riddle': {
-                                'message_requirement': 'necesita contraseña para ingresar'
+                            'game': {
+                                'message_requirement': 'necesita contraseña para ingresar',
                                 'requirement': 'introducir contraseña de la computadora',
                                 'award': 'llave',
+                                'name': 'Adivinanzas',
                                 'rules': 'pierde media vida por cada pregunta incorrecta',
                                 'questions': [
                                     {
@@ -117,7 +114,7 @@ def rooms():
 
             {
                 "name": 'Biblioteca',
-                    objects: [
+                    'objects': [
                         {
                             'name': 'mueble de libros',
                             'position': 'center',
@@ -193,21 +190,16 @@ def rooms():
                                 'rules': 'pierde una vida por partida pérdida',
                                 'questions': [
                                     {
-                                    'question': 'Edificio de aulas de la Metro',
-                                    'answer': 'A1',
-                                    'clue_1': 'sitio de comida',
+                                        'question': 'Si te graduas, pisas el samán',
+                                        'desplazamiento': 2
                                     },
-
                                     {
-                                    'question': 'Me buscan y nunca me encuentran en la Universidad',
-                                    'answer': 'Piscina',
-                                    'clue_1': 'Es rectangular',
+                                        'question': 'pisas el samán, si te graduas',
+                                        'desplazamiento': 4
                                     },
-
                                     {
-                                    'question': 'Tienes que subir muchos pisos para llegar a mi',
-                                    'answer': 'Rectorado',
-                                    'clue_1': 'Esta en el Eugenio Mendoza',
+                                        'question': 'pisas el samán, si te graduas',
+                                        'desplazamiento': 5
                                     },
                                 ],
                             },
@@ -218,7 +210,7 @@ def rooms():
 
             {
                 "name": 'Plaza Rectorado',
-                    objects: [
+                    'objects': [
                         {
                             'name': 'Saman',
                             'position': 'center',
@@ -227,10 +219,9 @@ def rooms():
                                 'name': 'Encuentra la lógica y resuelve',
                                 'message_requirement': 'pierdes una vida por pisar el samán 🥵',
                                 'rules': 'pierdes una vida por pisar el samán 🥵, pero si tienes en tu inventario lo requerido, se desbloquea la Narrativa 3',
-                                'requirement': ['Titulo Universitario', 'Mensaje']
-                                'questions: [
-                                    '✊✌️🤞☝️=11 \n ✌️✌️✌️✊=8 \n 🖐️✊🖐️✊🖐️=?'
-                                ]
+                                'requirement': ['Titulo Universitario', 'Mensaje'],
+                                'questions': ['✊✌️🤞☝️=11 \n ✌️✌️✌️✊=8 \n 🖐️✊🖐️✊🖐️=?',
+                                 '🐧+🐧+🐧=27 \n 🐧+🐝+🐝=19 \n 🐝+🐦+🐦=13 \n 🐝x🐧-🐦=?'],
                             }
                         },
 
@@ -239,9 +230,9 @@ def rooms():
                             'position': 'left',
                               'game': {
                                 'requirement': False,
-                                'name': 'Quizziz Cultura Unimetana',
+                                'name': 'Quizizz Cultura Unimetana',
                                 'award': 'libro de matemáticas',
-                                'rules': 'pierde media vida por opción incorrecta',
+                                'rules': 'pierde media vida por opción incorrecta o por acabarse el tiempo',
                                 'questions': [
                                     {
                                     'question': '¿En qué fecha es el Aniversario de la Universidad Metropolitana?',
@@ -296,7 +287,7 @@ def rooms():
 
             {
                 "name": 'Pasillo Laboratorios ',
-                    objects: [
+                    'objects': [
                         {
                             'name': 'puerta',
                             'position': 'center',
@@ -311,27 +302,37 @@ def rooms():
                                     'question': '¿Cuál es el valor de out de la siguiente lógica? a, b = False, True, out = (a and b and not a) or (not b) or (b and a) or (a and not a and not b) ',
                                     'answer': 'False'
                                     },
+                                    {
+                                    'question': '¿Cuál es el valor de out de la siguiente lógica? a, b = False, True, out = (a and b and a) or (b) or (b or a) or (a and not a and not b)',
+                                    'answer': 'True'
+                                    },
                                 ],
                             },
                         },
-                        },
+                    
 
-                    ]
+                    ],
             },
            
             {
                 "name": 'Cuarto de Servidores ',
-                    objects: [
+                    'objects': [
                         {
                             'name': 'puerta',
                             'position': 'center',
                               'game': {
                                 'message_requirement': 'Necesitas tener un carnet de trabajador para poder pasar',
                                 'requirement': 'carnet',
-                                'name': 'Cuadrados Mágicos',
+                                'name': 'Pipes',
                                 'award': 'Parar el cronómetro y ganar el juego',
                                 'rules': 'pierde una vida completa por partida pérdida',
-                                'description': 'en las instrucciones por ahora',
+                                'description': 'https://www.youtube.com/watch?list=PLH_elo2OIwaBiCJdcKKocFs1oXCItI9wB&v=DfDn5AFRnFI&feature=emb_title',
+                                'questions': [
+                                    {
+                                    'question': '',
+                                    'answer': 'False'
+                                    },
+                                ],
                             },
 
                         },
@@ -347,8 +348,19 @@ def rooms():
                                 'rules': 'media vida menos por cada palabra incorrecta',
                                 'questions': [
                                     {
-                                    'question': 'Reordena los caracteres para formar una palabra correcta y con sentido",
-                                    'words': [ 'esternocleidomastoideo', 'plato', 'baño', 'vaso', 'manta'],
+                                    'question': 'Reordena los caracteres para formar una palabra correcta y con sentido',
+                                    'category': 'Cocina',
+                                    'words': [ 'sarten', 'paleta', 'olla', 'vaso', 'hornilla'],
+                                    },
+                                    {
+                                    'question': 'Reordena los caracteres para formar una palabra correcta y con sentido',
+                                    'category': 'Baño',
+                                    'words': [ 'poceta', 'cepillo', 'afeitadora', 'regadera', 'grifo'],
+                                    },
+                                    {
+                                    'question':'Reordena los caracteres para formar una palabra correcta y con sentido',
+                                    'category': 'Baile',
+                                    'words': [ 'zumba', 'salsa', 'flamengo', 'tango', 'perreo'],
                                     },
                                 ],
                             },
@@ -364,19 +376,21 @@ def rooms():
                                 'rules': 'media vida menos por 5 intentos seguidos fallando',
                                 'questions': [
                                     {
-                                    'question': 'Descrifa la siguiente frase que esta cifrada con cifrado césar (se ha desplazado la letra 3 posiciones)",
-                                    'word_cifrada': 'vuñu ñuv judgtdguv rlvdp hñ vdodp'
-                                    'answer': 'solo los graduados pisan el Saman",
+                                    'question': 'Descrifa la siguiente frase que esta cifrada con cifrado césar (se ha desplazado la letra 3 posiciones)',
+                                    'word_cifrada': 'vuñu ñuv judgtdguv rlvdp hñ vdodp',
+                                    'answer': 'solo los graduados pisan el Saman',
                                     },
-                        },
+                        
 
                                 ],
                             },
                         },
+                          
+                    
 
-                    ]
+                    ],
             },
 
 
         ]
-    }
+    
