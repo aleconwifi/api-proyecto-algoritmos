@@ -373,12 +373,12 @@ def rooms():
                                 'requirement': False,
                                 'name': 'escoge un número entre',
                                 'award': 'título Universitario',
-                                'rules': 'media vida menos por 5 intentos seguidos fallando',
+                                'rules': 'media vida menos por 3 intentos seguidos fallando',
                                 'questions': [
                                     {
-                                    'question': 'Descrifa la siguiente frase que esta cifrada con cifrado césar (se ha desplazado la letra 3 posiciones)',
-                                    'word_cifrada': 'vuñu ñuv judgtdguv rlvdp hñ vdodp',
-                                    'answer': 'solo los graduados pisan el Saman',
+                                    'question': 'Escoge una número entre 1-15',
+                                    'answer': 'Random con python',
+                                    'clue_1': 'Estas cerca un poco abajo, Estás cerca un poco arriba,  estás muy abajo, estás muy arriba',
                                     },
                         
 
